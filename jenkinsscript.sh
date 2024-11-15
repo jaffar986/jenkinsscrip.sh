@@ -13,17 +13,11 @@ apt-get install docker-ce docker-ce-cli containerd.io
 systemctl enable docker
 systemctl start docker
 usermod -aG docker ubuntu
-##Extra package
+
+## Extra packages to install
 apt-get install vim git -y
 
-## Extra packages install
-apt install vim git -Y
 
-## Extra packages
-apt-get install vim git -y
-
-## extra packages
-apt-get install vim git -y 
 # run jenkins
 mkdir -p /var/jenkins_home
 chown -R 1000:1000 /var/jenkins_home/
